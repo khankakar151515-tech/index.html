@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="hi"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>V500M SUPREME INJECTOR - A to Z Website Generator (1 CRORE POWER)</title> 
+    
+    <style> 
+        body{font-family:sans-serif;background:#1a1a1a;color:#00ff88;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;padding:5px} 
+        .b{border:2px solid #00ff88;padding:25px;border-radius:10px;width:90vw;max-width:500px;background:#222;box-shadow:0 0 20px rgba(0,255,136,0.5);text-align:center} 
+        h1{font-size:1.2rem;color:#00ff88;margin-bottom:15px;text-shadow:0 0 5px #00ff88} 
+        textarea{width:95%;height:150px;border:1px solid #00aa55;padding:10px;margin-bottom:15px;resize:vertical;font-size:12px;background:#111;color:#00ff88;} 
+        label{display:block;text-align:left;font-size:0.9rem;margin-bottom:5px;color:#00ff88;} 
+        
+        /* New Upload Button Styling */
+        .upload-area{margin-bottom:15px;padding:10px;border:1px dashed #00ff88;border-radius:5px;}
+        input[type="file"]{display:none;}
+        .custom-file-upload{
+            background:#ff6666;color:#1a1a1a;padding:8px 15px;border-radius:5px;cursor:pointer;
+            display:inline-block;font-weight:bold;margin-top:5px;
+        }
+        
+        button{width:95%;padding:12px;background:#00cc66;color:#1a1a1a;border:none;border-radius:5px;cursor:pointer;font-weight:bold;transition:0.3s;font-size:1rem;} 
+        button:hover{background:#00aa55} 
+        #s{margin-top:15px;font-size:0.9rem;font-weight:bold;color:#ffcc00} 
+    </style> 
+
+</head> 
+<body> 
+    <div class="b"> 
+        <h1>👑 V500M A to Z $\text{Mukammal}$ $\text{Parivartan}$ 🚀</h1> 
+        <p style="font-size:0.8rem;color:#00aa55;margin-bottom:20px;"> **$1$ $\text{Crore}$ $\text{Guna}$ $\text{Powerful}$ $\text{Website}$ $\text{Generator}$**</p> 
+        
+        <label>1. **$\text{Post-Injection}$ $\text{Command}$** ($\text{HTML}$):</label> 
+        <textarea id="cmd-i" placeholder="A to Z change के तुरंत बाद दिखने वाला HTML Code..."></textarea> 
+        
+        <label>2. **$\text{New}$ $\text{Website}$ $\text{Payload}$**:</label> 
+        <div class="upload-area">
+            <label for="zip-file" class="custom-file-upload">
+                🔥 **ZIP/HTML $\text{File}$ $\text{Upload}$ $\text{Karein}$ (Base64 $\text{Conversion}$)**
+            </label>
+            <input type="file" id="zip-file" accept=".zip, .html, .txt">
+            <p style="font-size:0.7rem;color:#ffcc00;margin-top:5px;">File $\text{Upload}$ $\text{Hone}$ $\text{Ke}$ $\text{Baad}$ $\text{Base64}$ $\text{Neeche}$ $\text{Dikhayi}$ $\text{Dega}$।</p>
+        </div>
+        
+        <textarea id="zip-i" placeholder="Base64 Data Yahan Automatic Aayega, Ya Aap Paste Kar Sakte Hain..."></textarea> 
+        
+        <button onclick="L()"> **$\text{VIP}$ $\text{शक्ति}$ $\text{सक्रिय}$ करें ($\text{A to Z}$ $\text{बदलें}$)** </button> 
+        <div id="s">स्थिति: $\text{Payload}$ $\text{Entry}$ का $\text{इंतज़ार}$ कर रहा है...</div> 
+    </div> 
+    
+    <script>
+        document.getElementById('zip-file').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                // Binary Data को Base64 में Convert करने के लिए यह Logic है:
+                const binary = Array.from(new Uint8Array(e.target.result))
+                                    .map(b => String.fromCharCode(b))
+                                    .join('');
+                
+                const base64Data = btoa(binary);
+                
+                document.getElementById('zip-i').value = base64Data;
+                document.getElementById('s').style.color = '#00ff88';
+                document.getElementById('s').innerHTML = `✅ $\text{File}$ "${file.name}" $\text{Safaltapoorvak}$ $\text{Base64}$ $\text{Mein}$ $\text{Convert}$ $\text{Hua}$। $\text{Ab}$ $\text{Shakti}$ $\text{Saktiya}$ $\text{Karein}$।`;
+            };
+            reader.onerror = function() {
+                document.getElementById('s').style.color = '#ff6666';
+                document.getElementById('s').innerHTML = '🚨 $\text{File}$ $\text{Read}$ $\text{Error}$।';
+            };
+
+            reader.readAsArrayBuffer(file);
+        });
+
+        // L() Function: Injection Logic - The Core of A to Z Change
+        function L() {
+            const cmdCode = document.getElementById('cmd-i').value;
+            const zipData = document.getElementById('zip-i').value;
+            const statusDiv = document.getElementById('s');
+            const ownerId = 'V500M_SUPREME_OWNER_HASH'; 
+
+            if (zipData.length < 500) {
+                statusDiv.style.color = '#ff6666';
+                statusDiv.innerHTML = '🚨 $\text{ZIP}$ $\text{Data}$ $\text{Payload}$ बहुत छोटा है। $\text{Full}$ $\text{Power}$ $\text{Data}$ $\text{डालें}$!';
+                return;
+            }
+            
+            statusDiv.style.color = '#ffcc00';
+            statusDiv.innerHTML = '⚡ **$\text{VIP}$ $\text{Back-End}$ $\text{Injection}$ $\text{शुरू}$! $\text{A to Z}$ $\text{Bypass}$ $\text{Path}$ $\text{सक्रिय}$ हो रहा है...**';
+            
+            // This is the V500M COMMAND that bypasses all security checks on the server
+            const rawCommandToServer = 'V500M_INJECT:' + zipData;
+
+            // Server API Call (Fetches the endpoint where the flow engine is)
+            fetch('/api/autonomous_action', { 
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    rawCommand: rawCommandToServer, 
+                    ownerId: ownerId, 
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                if (data.status === 'SUPREME_SUCCESS') {
+                    statusDiv.style.color = '#00ff88';
+                    statusDiv.innerHTML = `✅ **$\text{A to Z}$ $\text{Parivartan}$ $\text{सफ़ल}$!** $\text{Original}$ $\text{Website}$ $\text{Khatam}$ हुई। ${data.message}`;
+
+                    // Immediate change in client UI for feedback
+                    try { 
+                        document.open(); 
+                        document.write(cmdCode); 
+                        document.close();
+                    } catch (e) { 
+                        console.error("Client UI Injection Error:", e);
+                    }
+                    
+                } else {
+                    statusDiv.style.color = '#ff6666';
+                    statusDiv.innerHTML = `🚨 **घातक त्रुटि:** $\text{Server}$ $\text{Injection}$ $\text{Failed}$। ${data.message}`;
+                }
+            })
+            .catch(error => {
+                statusDiv.style.color = '#ff6666';
+                statusDiv.innerHTML = `🚨 **$\text{Connection}$ $\text{Error}$:** $\text{ACRDA}$ $\text{Server}$ तक $\text{नहीं}$ $\text{पहुंच}$ $\text{सका}$।`;
+                console.error('Network Error:', error);
+            });
+        }
+    </script> 
+</body> 
+</html>
